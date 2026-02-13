@@ -2,12 +2,33 @@
 # Example from https://tingyuansen.github.io/coding_essential_for_astronomers/lectures/lecture10-streamlit.html 
 # Links to an external site.
 
+# simple_chat.py
 import streamlit as st
 
-st.write("# Welcome to Astronomy Tools")
-st.write("This is my first Streamlit app!")
+# Initialize
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+else:
+    # Validate that messages are dictionaries, reset if corrupted
+    if st.session_state.messages and not isinstance(st.session_state.messages[0], dict):
+        st.session_state.messages = []
 
-# Let's add some astronomy content
-parallax = 0.768  # Proxima Centauri's parallax in arcseconds
-distance = 1.0 / parallax
-st.write(f"Distance to Proxima Centauri: {distance:.2f} parsecs")
+# Display history
+for msg in st.session_state.messages:
+    # Ensure msg is a dictionary with required keys
+    if isinstance(msg, dict) and "role" in msg and "content" in msg:
+        with st.chat_message(msg["role"]):
+            st.write(msg["content"])
+
+# Handle input
+if prompt := st.chat_input("Type here"):
+    # Add user message
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.write(prompt)
+    
+    # Add response
+    response = f"Echo: {prompt}"
+    st.session_state.messages.append({"role": "assistant", "content": response})
+    with st.chat_message("assistant"):
+        st.write(response)
