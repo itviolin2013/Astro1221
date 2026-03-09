@@ -1,0 +1,19 @@
+name,type,ra,dec,magnitude,constellation,distance_pc,notes
+M1,Nebula,83.63,22.01,8.4,Taurus,1930,Supernova remnant
+M8,Nebula,270.92,-24.38,6.0,Sagittarius,1250,Lagoon Nebula
+M13,Globular Cluster,250.42,36.46,5.8,Hercules,6800,Great Globular Cluster in Hercules
+M16,Nebula,274.70,-13.82,6.0,Serpens,1740,Eagle Nebula
+M20,Nebula,270.67,-23.03,6.3,Sagittarius,1600,Trifid Nebula
+M31,Spiral,10.68,41.27,3.4,Andromeda,765000,Andromeda Galaxy
+M33,Spiral,23.46,30.66,5.7,Triangulum,835000,Triangulum Galaxy
+M42,Nebula,83.82,-5.39,4.0,Orion,412,Orion Nebula
+M44,Open Cluster,130.10,19.67,3.7,Cancer,182,Beehive Cluster
+M45,Open Cluster,56.75,24.12,1.6,Taurus,136,Pleiades
+M51,Spiral,202.47,47.19,8.4,Canes Venatici,7100000,Whirlpool Galaxy
+M57,Nebula,283.40,33.03,8.8,Lyra,700,Ring Nebula
+M63,Spiral,198.96,42.03,8.6,Canes Venatici,8980000,Sunflower Galaxy
+M81,Spiral,148.89,69.07,6.9,Ursa Major,3620000,Bode's Galaxy
+M82,Irregular,148.97,69.68,8.4,Ursa Major,3500000,Cigar Galaxy
+M87,Elliptical,187.71,12.39,8.6,Virgo,16400000,Virgo A
+M101,Spiral,210.80,54.35,7.9,Ursa Major,6400000,Pinwheel Galaxy
+M104,Spiral,189.99,-11.62,8.0,Virgo,9000000,Sombrero Galaxy

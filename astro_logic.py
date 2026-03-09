@@ -8,3 +8,9 @@ class Observation:
     def start_obs(self):
         """Print a message indicating the observation is starting."""
         print(f"Starting observation of {self.target_name} in {self.filter_name}")
+
+import matplotlib 
+import astropy
+from matplotlib_scalebar.scalebar import ScaleBar
+
+
